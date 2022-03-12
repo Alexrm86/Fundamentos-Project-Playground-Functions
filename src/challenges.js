@@ -96,5 +96,5 @@ module.exports = {
   footballPoints,
   highestCount,
   splitSentence,
-  techList,
-};
+  techList, 
+}};
