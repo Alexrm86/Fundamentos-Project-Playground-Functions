@@ -12,31 +12,30 @@ function compareTrue(number, number2) {
 
     return false;
 
-  } 
-  
+  }
+
 
 }
 
-console.log(compareTrue(false, true));
+console.log(compareTrue(false, false));
 
 
 
 
 // Desafio 2
-base = [10, 5, 51];
-height = [50, 2 / 2, 2];
+
 function calcArea(base, height) {
+  base = [10, 5, 51];
+  height = [50, 2 / 2, 2];
+  for (let index = 0; index < base.length; index = +1) {
 
-  for (let index = 0; index < base.length; index=+1) {
+    for (let index = 0; index < height; index = +1) {
+
+      let valorArea = base * height / 2;
+      return valorArea;
+    }
   }
-  for (let index = 0; index < height; index=+1){
-  
-}
 
-let valorArea = base * height / 2;
-return valorArea;
-
-}
 
 // Desafio 3
 function splitSentence() {
