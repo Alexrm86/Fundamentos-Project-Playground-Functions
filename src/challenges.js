@@ -1,11 +1,41 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui.
+
+
+function compareTrue(number, number2) {
+
+  if (number == number2) {
+
+    return true;
+
+
+  } else {
+
+    return false;
+
+  } 
+  
+
 }
 
+console.log(compareTrue(false, true));
+
+
+
+
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+base = [10, 5, 51];
+height = [50, 2 / 2, 2];
+function calcArea(base, height) {
+
+  for (let index = 0; index < base.length; index=+1) {
+  }
+  for (let index = 0; index < height; index=+1){
+  
+}
+
+let valorArea = base * height / 2;
+return valorArea;
+
 }
 
 // Desafio 3
