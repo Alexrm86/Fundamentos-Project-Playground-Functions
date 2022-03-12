@@ -39,9 +39,13 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence() {
-  let separator =['go Trybe'].splice(" ");
-  return separator;
-}console.log(separator);
+  let separator ='go,Trybe'.split('');
+  let vamos ='vamos que vamor'.split(' ');
+  let unico ='foguete'.split(' ')
+  return separator, vamos,unico;
+  
+}
+console.log(splitSentence());
 
 // Desafio 4
 function concatName() {
