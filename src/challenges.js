@@ -21,7 +21,6 @@ function compareTrue(number, number2) {
 
 function calcArea(base, height) {
 
-
   valorArea = base * height / 2;
 
   if (base == 51) {
@@ -32,8 +31,6 @@ function calcArea(base, height) {
     base / 2;
   }
   return valorArea
-
-
 
 } console.log(calcArea(51, 1));
 
@@ -53,15 +50,15 @@ console.log(splitSentence('go , Trybe'));
 function concatName(Array) {
 
   let nome = Array[0];
-  let ultimonome = Array[Array.length - 1];
+  let ultimonome = Array[Array.length - 1].split("  ,  ");
   let variaveis = ultimonome.concat(nome);
-
-
+   
+   
 
   return variaveis
 
 
-} console.log(concatName([', foguete', 'não', 'tem', 'ré']));
+} console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 
 
 
