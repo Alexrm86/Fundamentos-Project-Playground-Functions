@@ -37,14 +37,14 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(separetor) {
 
-      let separador = separetor.split(' ', );;
-    
-   
-      return separador
+  let separador = separetor.split(' ', );
+
+
+  return separador
 
 }
 
-console.log(splitSentence('go Trybe'));
+console.log(splitSentence('vamo que vamo'));
 
 // Desafio 4
 function concatName(Array) {
@@ -52,8 +52,8 @@ function concatName(Array) {
   let nome = Array[0];
   let ultimonome = Array[Array.length - 1].split("  ,  ");
   let variaveis = ultimonome.concat(nome);
-   
-   
+
+
 
   return variaveis
 
@@ -70,7 +70,7 @@ function footballPoints(wins, ties) {
     return points
 
   } if (wins == 1 && ties == 2) {
-    points = 5;
+    points = 5
     return points
   }
   if (wins == 0 && ties == 0) {
@@ -78,47 +78,65 @@ function footballPoints(wins, ties) {
   }
   return points
 
-}console.log(footballPoints(1, 2))
-  
-  // Desafio 6
-  function highestCount() {
-    // seu código aqui
+} console.log(footballPoints(1, 2))
+
+// Desafio 6
+function highestCount(numbers) {
+  let cont = 0;
+  for (let index = 0; index <= numbers.length; index++) {
+    for (let index2 = 1; index2 <= numbers.length; index2++) {
+
+
+      if (cont = ((numbers[index] > numbers[index2]) || (numbers[index] === numbers[index2]))) {
+
+        cont += 1;
+
+        return cont
+
+
+      }
+
+
+    }
   }
 
-  // Desafio 7
-  function catAndMouse() {
-    // seu código aqui
-  }
 
-  // Desafio 8
-  function fizzBuzz() {
-    // seu código aqui
-  }
+} console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 
-  // Desafio 9
-  function encode() {
-    // seu código aqui
-  }
-  function decode() {
-    // seu código aqui
-  }
+// Desafio 7
+function catAndMouse() {
+  // seu código aqui
+}
 
-  // Desafio 10
-  function techList() {
-    // seu código aqui
-  }
+// Desafio 8
+function fizzBuzz() {
+  // seu código aqui
+}
 
-  module.exports = {
-    calcArea,
-    catAndMouse,
-    compareTrue,
-    concatName,
-    decode,
-    encode,
-    fizzBuzz,
-    footballPoints,
-    highestCount,
-    splitSentence,
-    techList,
+// Desafio 9
+function encode() {
+  // seu código aqui
+}
+function decode() {
+  // seu código aqui
+}
 
-  };
+// Desafio 10
+function techList() {
+  // seu código aqui
+}
+
+module.exports = {
+  calcArea,
+  catAndMouse,
+  compareTrue,
+  concatName,
+  decode,
+  encode,
+  fizzBuzz,
+  footballPoints,
+  highestCount,
+  splitSentence,
+  techList,
+
+};
