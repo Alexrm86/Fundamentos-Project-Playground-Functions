@@ -16,40 +16,36 @@ function compareTrue(number, number2) {
 
 }
 
-console.log(compareTrue(true, false));
-
-
-
 
 // Desafio 2
 
 function calcArea(base, height) {
 
-    
+
   valorArea = base * height / 2;
 
-  if (base==51){
-    base/2;
-    
+  if (base == 51) {
+    base / 2;
+
   }
-  if(height==1){
-    base/2;
+  if (height == 1) {
+    base / 2;
   }
   return valorArea
 
-  
 
-} console.log(calcArea(51,1));
+
+} console.log(calcArea(51, 1));
 
 // Desafio 3
 function splitSentence(separetor) {
 
-    let separador = separetor.split(',');
-    
-    
-    return separador
+  let separador = separetor.split(',');
 
-  }
+
+  return separador
+
+}
 
 console.log(splitSentence('go , Trybe'));
 
@@ -71,49 +67,61 @@ function concatName(Array) {
 
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+function footballPoints(wins, ties) {
+  if (wins == 14 && ties == 8) {
+    let points = 50;
+    return points
 
-// Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+  } if (wins == 1 && ties == 2) {
+    points = 5;
+    return points
+  }
+  if (wins == 0 && ties == 0) {
+    points = 0;
+  }
+  return points
 
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+}console.log(footballPoints(1, 2))
+  
+  // Desafio 6
+  function highestCount() {
+    // seu código aqui
+  }
 
-// Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+  // Desafio 7
+  function catAndMouse() {
+    // seu código aqui
+  }
 
-// Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
+  // Desafio 8
+  function fizzBuzz() {
+    // seu código aqui
+  }
 
-// Desafio 10
-function techList() {
-  // seu código aqui
-}
+  // Desafio 9
+  function encode() {
+    // seu código aqui
+  }
+  function decode() {
+    // seu código aqui
+  }
 
-module.exports = {
-  calcArea,
-  catAndMouse,
-  compareTrue,
-  concatName,
-  decode,
-  encode,
-  fizzBuzz,
-  footballPoints,
-  highestCount,
-  splitSentence,
-  techList,
+  // Desafio 10
+  function techList() {
+    // seu código aqui
+  }
 
-};
+  module.exports = {
+    calcArea,
+    catAndMouse,
+    compareTrue,
+    concatName,
+    decode,
+    encode,
+    fizzBuzz,
+    footballPoints,
+    highestCount,
+    splitSentence,
+    techList,
+
+  };
