@@ -142,16 +142,42 @@ function fizzBuzz(number) {
 }console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // Desafio 9
-function encode() {
+function encode(str) {
   // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
+  let vogais = ['a', 'e', 'i', 'o', 'u'];
+  for (let index = 1; index <= vogais.length; index += 1) {
+    str = str.replace(RegExp(vogais[index - 1], 'g'), index);
+  }
+  return str;
+
+}console.log(encode("hi there!"))
+
+function decode(recode) {
+  let vogais= ['a', 'e', 'i', 'o', 'u'];
+  for (let index = 1; index <= vogais.length; index += 1) {
+    recode = recode.replace(RegExp(index.toString(), 'g'), vogais[index - 1]);
+  }
+  return recode;
+
+}console.log(decode("h3 th2r2!"))
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(str,name) {
+  if (str.length === 0) {
+    return 'Vazio!';
+  }
+  let resultado= [];
+    str.sort();
+  for (let index of str) {
+    let resultObject = {
+      tech:   index,
+      name: `${name}`,
+    };
+    resultado.push(resultObject);
+  }
+  return resultado;
+}console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"))
+```
 }
 
 module.exports = {
