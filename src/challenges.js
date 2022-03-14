@@ -47,19 +47,18 @@ function splitSentence(separetor) {
 console.log(splitSentence('vamo que vamo'));
 
 // Desafio 4
-function concatName(strings) {
-  let array = strings.split(' ', );
+function concatName(Array) {
 
-  let nome = array[0];
-  let ultimonome = array[array.length - 1];
-  let variaveis = ultimonome.concat(nome).split(' ', );
+  let nome = Array[0]
+  let ultimonome = Array[Array.length - 1];
+  let variaveis = ultimonome.concat(nome);
 
 
 
   return variaveis
 
 
-} console.log(concatName('foguete não tem ré'));
+} console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 
 
@@ -105,10 +104,22 @@ function highestCount(numbers) {
 } console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+function catAndMouse(cat1 , cat2) {
 
+
+  if(cat1 > cat2){
+   
+  
+     return 'cat1'
+} if(cat2>cat1){
+
+
+  return 'cat2'
+}else if (cat1==cat2){
+
+  return "os gatos trombam e o rato foge"
+}
+}console.log(catAndMouse(3,3));
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
