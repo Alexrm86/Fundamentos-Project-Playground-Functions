@@ -176,7 +176,8 @@ function techList(str,name) {
     resultado.push(resultObject);
   }
   return resultado;
-}console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"))
+}
+console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"));
 ```
 }
 
