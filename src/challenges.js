@@ -37,7 +37,7 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(separetor) {
 
-  let separador = separetor.split(' ', );
+  let separador = separetor.split(' ',);
 
 
   return separador
@@ -47,18 +47,19 @@ function splitSentence(separetor) {
 console.log(splitSentence('vamo que vamo'));
 
 // Desafio 4
-function concatName(Array) {
+function concatName(strings) {
+  let array = strings.split(' ', );
 
-  let nome = Array[0];
-  let ultimonome = Array[Array.length - 1].split("  ,  ");
-  let variaveis = ultimonome.concat(nome);
+  let nome = array[0];
+  let ultimonome = array[array.length - 1];
+  let variaveis = ultimonome.concat(nome).split(' ', );
 
 
 
   return variaveis
 
 
-} console.log(concatName(['foguete', 'não', 'tem', 'ré']));
+} console.log(concatName('foguete não tem ré'));
 
 
 
