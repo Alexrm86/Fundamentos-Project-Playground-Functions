@@ -178,8 +178,7 @@ function techList(str,name) {
   return resultado;
 }
 console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas"));
-```
-}
+
 
 module.exports = {
   calcArea,
